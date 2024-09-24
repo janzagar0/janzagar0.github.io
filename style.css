@@ -1,0 +1,89 @@
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.navbar-brand {
+    margin-left: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar-brand:hover {
+    color: #2c38e6 !important;
+}
+
+.navbar-nav {
+    margin-right: 20px;
+}
+
+.nav-item {
+    color: white;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: #2c38e6 !important;
+}
+
+h1 {
+    font-weight: bold;
+    font-family: "Helvetica";
+}
+
+#headshot {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 250px;
+    border-radius: 50%;
+}
+.row {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.img-fluid {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
+}
+
+.card-header {
+    font-weight: bold;
+    font-family: "Helvetica";
+    font-size: 1rem;
+}
+
+p {
+    font-family: "Helvetica";
+}
+
+.card-body-about {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 33%
+}
+
+.about-list {
+    text-align: left;
+}
+
+  /* Add a gray background color and some padding to the footer */
+footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+}
+
+#footer-text {
+    font-weight: bold;
+    font-family: "Helvetica", cursive;
+}
