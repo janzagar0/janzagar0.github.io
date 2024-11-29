@@ -11,6 +11,8 @@ function hideLoader() {
     loaderPage.style.display = "none";
 }
 
+// Not currently in use
+/*
 function hamburgerMenu() {
     var x = document.getElementById("mobile-links");
     if (x.style.display === "block") {
@@ -19,3 +21,4 @@ function hamburgerMenu() {
         x.style.display = "block";
     }
 }
+*/
