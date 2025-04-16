@@ -1,98 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Jose Anza Garcia's Portfolio/Personal Page</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--Add favicon-->
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <!--Add CSS stylesheet-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!--Add Leaflet stylesheet-->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
     <!--Add Leaflet API-->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-</head>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+  </head>
 
-<body onload="timeLoader()">
+  <body onload="timeLoader()">
     <div id="loader-page">
-        <div id="loader"></div>
-        <!--All credit to css-loaders.com for the loader spinner animation-->
+      <div id="loader"></div>
+      <!--All credit to css-loaders.com for the loader spinner animation-->
     </div>
     <div id="header">
-        <text id="header-text">Jose F. Anza Garcia</text>
-        <table id="header-table">
-            <tbody id="header-tbody">
-                <tr id="header-tr">
-                    <td class="header-td">
-                        <a href="index.html" class="header-links"><text>Home</text></a>
-                    </td>
-                    <td class="header-td">
-                        <a href="portfolio.html" class="header-links"><text>Portfolio</text></a>
-                    </td>
-                    <td class="header-td">
-                        <a href="contact.html" class="header-links"><text>Contact</text></a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+      <text id="header-text">Jose F. Anza Garcia</text>
+      <table id="header-table">
+        <tbody id="header-tbody">
+          <tr id="header-tr">
+            <td class="header-td">
+              <a href="index.html" class="header-links"><text>Home</text></a>
+            </td>
+            <td class="header-td">
+              <a href="portfolio.html" class="header-links"
+                ><text>Portfolio</text></a
+              >
+            </td>
+            <td class="header-td">
+              <a href="contact.html" class="header-links"
+                ><text>Contact</text></a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <div id="content">
-        <text id="mobile-title-text">Jose F. Anza Garcia</text>
-        <img id="headshot" src="images/me.jpg" alt="Handsome Guy">
-        <hr>
-        <div id="content-container">
-            <text class="body-text">I am a recent graduate from the University of Maryland's MS in GIS program.
-                I have
-                5+ years of experience using ArcGIS products,
-                including 4+ with ArcGIS Pro in particular. I specialize in all types of spatial analysis
-                processes, 3D
-                GIS and indoors
-                GIS (including location-aware wayfinding deployments), and GIS-related programming, including
-                scripting
-                and automation with Python
-                and developing web GIS applications with JavaScript. Please head over to the "Portfolio" tab in
-                order to
-                view some of my past work.
-                Feel free to contact me with questions about any items in my portfolio.
-            </text>
-            <text class="body-header">Education</text>
-            <text class="body-header-small">Master of Science</text>
-            <text class="body-text"><b>Geospatial Information Sciences</b>, University of Maryland College Park, 2024</text>
-            <text class="body-text"><b>Capstone Project: </b><i>A 3D Web GIS Application for Map Library Exploration and Discovery</i></text>
-            <text class="body-text"><b>Selected coursework: </b></text>
-            <ul class="body-list">
-                <li>Spatial Statistics</li>
-                <li>Spatial Database System</li>
-                <li>Advanced Python Programming for GIS</li>
-                <li>Web Programming</li>
-                <li>GIS and Spatial Modeling</li>
-            </ul>
-            <br>
-            <text class="body-header-small">Bachelor of Science</text>
-            <text class="body-text"><b>Geographical Sciences</b>, University of Maryland College Park, 2022</text>
-            <text class="body-text">Specialization: Geographic Information Science & Computer Cartography</text>
-            <text class="body-text"><b>Selected coursework: </b></text>
-            <ul class="body-list">
-                <li>GIS and Spatial Analysis</li>
-                <li>Computer Cartography</li>
-                <li>Digital Image Processing and Analysis</li>
-                <li>Programming for Image Analysis</li>
-            </ul>
-            <text class="body-header">Awards</text>
-            <ul class="body-list">
-                <li><text class="body-text"><b>Student Assistantship</b>, ESRI 2024 User Conference, San Diego, CA</text></li>
-            </ul>
-        </div>
-        <br>
-        <text class="body-header">Travel Bucket List</text>
-        <div id="map"></div>
+      <text id="mobile-title-text">Jose F. Anza Garcia</text>
+      <img id="headshot" src="images/me.jpg" alt="Handsome Guy" />
+      <hr />
+      <div id="content-container">
+        <text class="body-text"
+          >I am a recent graduate from the University of Maryland's MS in GIS
+          program. I have 5+ years of experience using ArcGIS products,
+          including 4+ with ArcGIS Pro in particular. I specialize in all types
+          of spatial analysis processes, 3D GIS and indoors GIS (including
+          location-aware wayfinding deployments), and GIS-related programming,
+          including scripting and automation with Python and developing web GIS
+          applications with JavaScript. Please head over to the "Portfolio" tab
+          in order to view some of my past work. Feel free to contact me with
+          questions about any items in my portfolio.
+        </text>
+        <text class="body-header">Education</text>
+        <text class="body-header-small">Master of Science</text>
+        <text class="body-text"
+          ><b>Geospatial Information Sciences</b>, University of Maryland
+          College Park, 2024</text
+        >
+        <text class="body-text"
+          ><b>Capstone Project: </b
+          ><i
+            >A 3D Web GIS Application for Map Library Exploration and
+            Discovery</i
+          ></text
+        >
+        <text class="body-text"><b>Selected coursework: </b></text>
+        <ul class="body-list">
+          <li>Spatial Statistics</li>
+          <li>Spatial Database System</li>
+          <li>Advanced Python Programming for GIS</li>
+          <li>Web Programming</li>
+          <li>GIS and Spatial Modeling</li>
+        </ul>
+        <br />
+        <text class="body-header-small">Bachelor of Science</text>
+        <text class="body-text"
+          ><b>Geographical Sciences</b>, University of Maryland College Park,
+          2022</text
+        >
+        <text class="body-text"
+          >Specialization: Geographic Information Science & Computer
+          Cartography</text
+        >
+        <text class="body-text"><b>Selected coursework: </b></text>
+        <ul class="body-list">
+          <li>GIS and Spatial Analysis</li>
+          <li>Computer Cartography</li>
+          <li>Digital Image Processing and Analysis</li>
+          <li>Programming for Image Analysis</li>
+        </ul>
+        <text class="body-header">Awards</text>
+        <ul class="body-list">
+          <li>
+            <text class="body-text"
+              ><b>Student Assistantship</b>, ESRI 2024 User Conference, San
+              Diego, CA</text
+            >
+          </li>
+          <br />
+          <li>
+            <text class="body-text"
+              ><b>2024 Student of the Year</b>, University of Maryland Esri
+              Innovation Program</text
+            >
+          </li>
+        </ul>
+      </div>
+      <br />
+      <text class="body-header">Travel Bucket List</text>
+      <div id="map"></div>
     </div>
     <script src="main.js"></script>
     <script src="map.js"></script>
-</body>
-
+  </body>
 </html>
